@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: test
+  - name: test_dbt
     description: "A starter dbt model"
     columns:
       - name: date
