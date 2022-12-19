@@ -10,7 +10,7 @@
 {{ config(
     materialized='table',
     indexes=[
-      {'columns': ['_airbyte_ab_id'], 'unique': unique},
+      {'columns': ['_airbyte_ab_id'], 'unique': True},
       {'columns': ['date', 'customer_id'], 'unique': True},
     ]
 ) }}
