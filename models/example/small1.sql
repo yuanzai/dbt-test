@@ -9,8 +9,8 @@
 
 {{ config(
     materialized='table',
-    alias='small1',
-    schema='final_data',
+    alias='final_data',
+    schema='small1',
     indexes=[
       {'columns': ['_airbyte_ab_id'], 'unique': True},
       {'columns': ['seq'], 'unique': True},
