@@ -9,7 +9,10 @@
 
 {{ config(
     materialized='table',
-    unique_key = '_airbyte_ab_id'
+    indexes=[
+      {'columns': ['_airbyte_ab_id'], 'unique': unique},
+      {'columns': ['date', 'customer_id'], 'unique': True},
+    ]
 ) }}
 
 select *, 1 as "customer_id"
