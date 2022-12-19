@@ -10,6 +10,7 @@
 {{ config(
     materialized='table',
     alias='vix',
+    schema='customer',
     indexes=[
       {'columns': ['_airbyte_ab_id'], 'unique': True},
       {'columns': ['"Date"', 'customer_id'], 'unique': True},
