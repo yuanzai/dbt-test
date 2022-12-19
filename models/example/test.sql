@@ -7,7 +7,10 @@
     Try changing "table" to "view" below
 */
 
-{{ config(materialized='table') }}
+{{ config(
+    materialized='table',
+    unique_key = '_airbyte_ab_id'
+) }}
 
 select *, 1 as "customer_id"
 from public.test
