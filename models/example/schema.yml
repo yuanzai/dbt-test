@@ -5,7 +5,7 @@ models:
   - name: test_dbt
     description: "A starter dbt model"
     columns:
-      - name: date
+      - name: Date
         description: "The primary key for this table"
         tests:
           - unique

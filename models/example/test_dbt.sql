@@ -11,7 +11,7 @@
     materialized='table',
     indexes=[
       {'columns': ['_airbyte_ab_id'], 'unique': True},
-      {'columns': ['date', 'customer_id'], 'unique': True},
+      {'columns': ['Date', 'customer_id'], 'unique': True},
     ]
 ) }}
 
