@@ -13,7 +13,7 @@
 ) }}
 
 select *, 1 as "customer_id"
-from public.test
+from customer.test
 
 /*
     Uncomment the line below to remove records with null `id` values
