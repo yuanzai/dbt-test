@@ -11,3 +11,20 @@ models:
           - unique
           - not_null
 
+  - name: small1
+    description: "Small data 1"
+    columns:
+      - name: seq
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: small2
+    description: "Small data 2"
+    columns:
+      - name: seq
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
