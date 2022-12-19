@@ -10,7 +10,7 @@
 {{ config(materialized='table') }}
 
 select *, 1 as "customer_id"
-from public._airbyte_raw_test
+from public.test
 
 /*
     Uncomment the line below to remove records with null `id` values
