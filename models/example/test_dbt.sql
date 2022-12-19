@@ -11,12 +11,12 @@
     materialized='table',
     indexes=[
       {'columns': ['_airbyte_ab_id'], 'unique': True},
-      {'columns': ['Date', 'customer_id'], 'unique': True},
+      {'columns': ['"Date"', 'customer_id'], 'unique': True},
     ]
 ) }}
 
 select *, 1 as "customer_id"
-from customer.test
+from customer.test as t
 
 /*
     Uncomment the line below to remove records with null `id` values
